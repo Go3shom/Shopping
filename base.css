@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --clr-secondary: crimson;
+    --clr-secondary--drk: #c70b31;
+    --clr-secondary--drkr: #b50a2c;
+    --clr-bg: #333;
+    --clr-bg--drk: #222;
+    --clr-bg--drkr: #111;
+    --clr-body: ivory;
+    --clr-link: slateblue;
+    /* foots */
+    --fz: 1.25rem;
+    --ff-bdy: Roboto, 'Segoe UI', sans-serif;
+    --ff-hdng: 'Times New Roman', Times, serif;
+    /* Spaces */
+    --gutter: 0.5em;
+}
+
+body {
+    /* min-height: 2000px; */
+    margin: 0;
+    color: var(--clr-bg);
+    background-color: var(--clr-body);
+    font-size: var(--fz);
+    font-family: var(--ff-bdy);
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    font-family: var(--ff-hdng);
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    /* display: block; */
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;  
+}
+
+    li.active > a {
+        opacity: 1;
+    }
+    
+a {
+    text-decoration: none;
+    opacity: 0.5;
+    transition: opacity 1s ease-in-out, transform 0.75s ease-in-out;
+}
+    a:hover,
+    a:focus,
+    a:focus-within {
+        outline: none;
+        opacity: 1;
+        transform: translateX(var(--gutter));
+    }
+
+footer {
+    /* position: sticky; */
+    position: relative;
+    bottom: 0;
+    min-height: 3vh;
+    /* right: 0; */
+    /* left: 0; */
+    /* z-index: 998; */
+    /* padding: var(--gutter); */
+}

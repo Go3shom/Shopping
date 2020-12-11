@@ -1,0 +1,104 @@
+.nav {
+    /* padding: 1em 0.5em; */
+    background-color: var(--clr-bg);
+}
+    .nav__list {
+        /* padding: 1em 0; */
+        /* padding: 2em; */
+    }
+    .nav__item {
+        /* padding: 1em; */
+        padding: 0.7em;
+        border: 1px solid transparent;
+    }
+        .nav__item:hover,
+        .nav__item:focus-within,
+        .nav__item.active {
+            background-color: var(--clr-bg--drk);
+            border-color: var(--clr-bg--drkr) transparent;
+        }
+        .footer.nav .nav__item:hover,
+        .footer.nav .nav__item:focus-within,
+        .footer.active {
+            background-color: var(--clr-secondary--drk);
+            border-color: var(--clr-secondary--drkr) transparent;
+        }
+    
+    .nav__link {
+        color: var(--clr-body);
+        display: block;
+    }
+
+
+
+.container {
+    margin: 0 auto;
+    width: 750px;
+    max-width: 90%;
+}
+
+.content {
+    display: flex;
+}
+
+.heading {
+    margin-bottom: calc(var(--gutter) - 0.2em);
+}
+.subheading {
+    margin-bottom: var(--gutter);
+}
+
+.img {
+    margin-top: var(--gutter);
+    /* border: 0.15em solid var(--clr-bg--drk); */
+    border-radius: calc(var(--gutter) - 0.2em);
+}
+
+.card {
+    border: 0.07em dashed var(--clr-secondary);
+    border: 0.1em dashed var(--clr-secondary);
+    padding: calc(var(--gutter) * 2);
+    margin: 1em auto;
+}
+
+.active {
+    background-color: var(--clr-bg--drk);
+    border-color: var(--clr-bg--drkr);
+}
+
+
+
+
+.footer {
+    background-color: var(--clr-secondary);
+}
+    .footer.nav .nav__item:hover,
+    .footer.nav .nav__item:focus-within,
+    .footer .active {
+        background-color: var(--clr-secondary--drk);
+        border-color: var(--clr-secondary--drkr) transparent;
+    }
+
+a.up-arrow,
+a.down-arrow {
+	position: absolute;
+	bottom: 1em;
+    right: 1em;
+    transform: unset;
+    padding: 0.5em;
+    border-radius: 20%;
+    color: var(--clr-body);
+	background-color: var(--clr-bg--drkr);
+	/* background-color: var(--clr-link); */
+}
+    a.up-arrow:hover,
+    a.down-arrow:focus {
+        transform: translateY(var(--gutter));
+    }
+
+    .up-arrow::after {
+        content: "\1F879";
+    }
+    .down-arrow::after {
+        content: "\1F87B";
+    }
