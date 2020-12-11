@@ -19,7 +19,8 @@ html {
     --clr-body: ivory;
     --clr-link: slateblue;
     /* foots */
-    --fz: 1.125rem;
+  /* --fz: 1.25rem; */
+--fz: 1.125rem;
     --ff-bdy: Roboto, 'Segoe UI', sans-serif;
     --ff-hdng: 'Times New Roman', Times, serif;
     /* Spaces */
