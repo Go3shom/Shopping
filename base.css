@@ -10,20 +10,24 @@ html {
 }
 
 :root {
+    /* Colors */
     --clr-secondary: crimson;
     --clr-secondary--drk: #c70b31;
     --clr-secondary--drkr: #b50a2c;
     --clr-bg: #333;
     --clr-bg--drk: #222;
     --clr-bg--drkr: #111;
+    --clr-body: whitesmoke;
     --clr-body: ivory;
     --clr-link: slateblue;
-    /* foots */
-  /* --fz: 1.25rem; */
---fz: 1.125rem;
+    
+    /* Font */
+    /* --fz: 1.25rem; */
+    --fz: 1.125rem;
     --ff-bdy: Roboto, 'Segoe UI', sans-serif;
     --ff-hdng: 'Times New Roman', Times, serif;
-    /* Spaces */
+    
+    /* Space */
     --gutter: 0.5em;
 }
 
@@ -63,7 +67,7 @@ li {
     li.active > a {
         opacity: 1;
     }
-    
+
 a {
     text-decoration: none;
     opacity: 0.5;
