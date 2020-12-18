@@ -53,6 +53,7 @@ img {
 
 nav {
     /* display: block; */
+    margin-bottom: calc(var(--gutter) * 4);
 }
 
 ul {
