@@ -18,13 +18,13 @@ html {
     --clr-bg--drk: #222;
     --clr-bg--drkr: #111;
     --clr-body: whitesmoke;
-    --clr-body: ivory;
+    --clr-card: ivory;
     --clr-link: slateblue;
     
     /* Font */
-    /* --fz: 1.25rem; */
     --fz: 1.125rem;
-    --ff-bdy: Roboto, 'Segoe UI', sans-serif;
+    --fz: 1.25rem;
+    --ff-body: Roboto, 'Segoe UI', sans-serif;
     --ff-hdng: 'Times New Roman', Times, serif;
     
     /* Space */
@@ -32,12 +32,12 @@ html {
 }
 
 body {
-    /* min-height: 2000px; */
+    /* min-height: 5500px; */
     margin: 0;
     color: var(--clr-bg);
     background-color: var(--clr-body);
     font-size: var(--fz);
-    font-family: var(--ff-bdy);
+    font-family: var(--ff-body);
 }
 
 h1, h2, h3, p {
@@ -78,14 +78,13 @@ a {
     a:focus-within {
         outline: none;
         opacity: 1;
-        transform: translateX(var(--gutter));
     }
 
 footer {
     /* position: sticky; */
     position: relative;
     bottom: 0;
-    min-height: 3vh;
+    /* min-height: 4em; */
     /* right: 0; */
     /* left: 0; */
     /* z-index: 998; */
