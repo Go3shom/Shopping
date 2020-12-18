@@ -1,5 +1,4 @@
 .nav {
-    margin-bottom: calc(var(--gutter) * 4);
     background-color: var(--clr-bg);
 }
     .nav__list {
